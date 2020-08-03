@@ -1,3 +1,5 @@
+https://github.com/hoangmor/shop_vanilo.git
+
 # Vanilo Demo Application
 
 ![v1.1](https://img.shields.io/badge/version-1.1-green.svg?style=flat-square)
