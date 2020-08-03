@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Schema;
+use Konekt\AppShell\Http\Controllers\UserController as KonektUserController;
+use App\Http\Controllers\Admin\UserController;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +28,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(KonektUserController::class, UserController::class);
     }
 }
