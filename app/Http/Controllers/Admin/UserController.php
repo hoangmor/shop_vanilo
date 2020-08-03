@@ -11,7 +11,6 @@ class UserController extends KonektUserController
 {
     public function index()
     {
-
         return $this->appShellView('user.index', [
             'users' => UserProxy::all()
         ]);
